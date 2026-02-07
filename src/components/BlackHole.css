@@ -16,6 +16,7 @@
   transform: translate(-50%, -50%);
   width: 400px;
   height: 400px;
+  filter: drop-shadow(0 0 40px rgba(255, 160, 60, 0.25));
 }
 
 .event-horizon {
@@ -23,14 +24,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 120px;
-  height: 120px;
-  background: radial-gradient(circle at center, 
-    #000000 0%, 
-    #000000 40%, 
-    rgba(0, 0, 0, 0.8) 60%, 
-    rgba(0, 0, 0, 0.4) 80%, 
-    transparent 100%);
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle at center,
+  #000000 0%,
+  #000000 45%,
+  rgba(40, 20, 0, 0.8) 60%,
+  rgba(80, 40, 0, 0.4) 75%,
+  transparent 100%);
   border-radius: 50%;
   animation: pulse 8s ease-in-out infinite;
 }
@@ -40,16 +41,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
+  width: 398px;
+  height: 398px;
   background: radial-gradient(ellipse at center,
     transparent 20%,
-    rgba(20, 10, 40, 0.3) 25%,
-    rgba(40, 20, 80, 0.5) 35%,
-    rgba(60, 30, 120, 0.4) 45%,
-    rgba(80, 40, 160, 0.3) 55%,
-    rgba(100, 50, 200, 0.2) 65%,
-    transparent 75%);
+    rgba(255, 140, 0, 0.25) 30%,
+    rgba(255, 165, 0, 0.45) 40%,
+    rgba(255, 200, 80, 0.6) 50%,
+    rgba(255, 165, 0, 0.45) 60%,
+    rgba(255, 140, 0, 0.25) 70%,
+    transparent 80%);
   border-radius: 50%;
   animation: rotate 30s linear infinite;
 }
@@ -58,17 +59,17 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
+  transform: translate(-40%, -40%);
+  width: 385px;
+  height: 385px;
   background: radial-gradient(circle at center,
-    transparent 30%,
-    rgba(100, 50, 200, 0.1) 40%,
-    rgba(150, 100, 255, 0.2) 50%,
-    rgba(200, 150, 255, 0.3) 60%,
-    rgba(150, 100, 255, 0.2) 70%,
-    rgba(100, 50, 200, 0.1) 80%,
-    transparent 90%);
+  transparent 30%,
+  rgba(255, 180, 60, 0.15) 45%,
+  rgba(255, 200, 100, 0.35) 55%,
+  rgba(255, 220, 150, 0.5) 65%,
+  rgba(255, 200, 100, 0.35) 75%,
+  rgba(255, 180, 60, 0.15) 85%,
+  transparent 95%);
   border-radius: 50%;
   animation: glow 6s ease-in-out infinite;
 }
@@ -101,3 +102,5 @@
     transform: translate(-50%, -50%) scale(1.1);
   }
 }
+
+

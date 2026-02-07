@@ -1,0 +1,78 @@
+.asteroid-container {
+  position: absolute;
+  top: 35%;
+  right: 15%;
+  z-index: 15;
+}
+
+.asteroid {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  animation: rotate 60s linear infinite, float 8s ease-in-out infinite;
+}
+
+.asteroid-surface {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at 30% 30%, 
+    #8b7355 0%, 
+    #6b5d4f 25%, 
+    #4a3f36 50%, 
+    #3a2f26 75%, 
+    #2a1f16 100%);
+  border-radius: 45% 55% 52% 48% / 48% 45% 55% 52%;
+  box-shadow: 
+    inset -10px -10px 20px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 15px rgba(139, 115, 85, 0.3),
+    0 0 30px rgba(139, 115, 85, 0.2);
+}
+
+.crater {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at center,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(42, 31, 22, 0.8) 50%,
+    rgba(42, 31, 22, 1) 100%);
+  box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.crater-1 {
+  width: 25px;
+  height: 25px;
+  top: 30%;
+  left: 25%;
+}
+
+.crater-2 {
+  width: 18px;
+  height: 18px;
+  top: 60%;
+  left: 65%;
+}
+
+.crater-3 {
+  width: 12px;
+  height: 12px;
+  top: 45%;
+  left: 45%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
